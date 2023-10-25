@@ -25,11 +25,11 @@ export function Transactions() {
                 <td>{transaction.description}</td>
                 <td>
                   <PriceHighlight variant={transaction.type}>
-                    R$ {transaction.price}
+                    {transaction.price}
                   </PriceHighlight>
                 </td>
                 <td>{transaction.category}</td>
-                <td>{new Date(transaction.createAt).toDateString()}</td>
+                <td>{transaction.createAt}</td>
               </tr>
             ))}
           </tbody>
