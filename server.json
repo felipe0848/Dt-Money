@@ -1,28 +1,52 @@
 {
-  "transactions":[
+  "transactions": [
     {
-      "id":1,
+      "id": 1,
       "description": "Desenvolvimento de site",
       "type": "income",
       "category": "Venda",
       "price": 14000,
-      "createAt": "2023-10-24T19:54:17.419Z"
+      "createdAt": "2023-10-24T19:54:17.419Z"
     },
     {
-      "id":2,
+      "id": 2,
       "description": "Hamburger",
       "type": "outcome",
       "category": "Alimentação",
       "price": 50,
-      "createAt": "2023-10-24T19:32:17.419Z"
+      "createdAt": "2023-10-24T19:32:17.419Z"
     },
     {
-      "id":3,
+      "id": 3,
       "description": "Cursor",
       "type": "outcome",
       "category": "Educação",
       "price": 1950,
-      "createAt": "2023-10-24T19:32:17.419Z"
+      "createdAt": "2023-10-24T19:32:17.419Z"
+    },
+    {
+      "category": "Alimentação",
+      "description": "subway",
+      "price": 22,
+      "type": "outcome",
+      "createdAt": "2023-10-26T14:37:38.426Z",
+      "id": 4
+    },
+    {
+      "category": "Alimentação",
+      "description": "Mercado",
+      "price": 100,
+      "type": "outcome",
+      "createdAt": "2023-10-26T14:47:29.915Z",
+      "id": 5
+    },
+    {
+      "category": "Trabalho",
+      "description": "salario",
+      "price": 1000,
+      "type": "income",
+      "createdAt": "2023-10-26T14:47:46.107Z",
+      "id": 6
     }
-  ]
+    ]
 }

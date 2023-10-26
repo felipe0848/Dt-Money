@@ -1,14 +1,14 @@
 import { useContext } from 'react'
-import { Header } from '../../../components/header'
-import { Summary } from '../../../components/summary'
+import { Header } from '../../components/header'
+import { Summary } from '../../components/summary'
 import { FormSearch } from './components/form-search'
 import {
   PriceHighlight,
   TransactionContainer,
   TransactionTable,
 } from './styles'
-import { TransactionsContext } from '../../../contexts/transactions-contexts'
-import { dataFormatter, priceFormatter } from '../../../ultis/formatter'
+import { TransactionsContext } from '../../contexts/transactions-contexts'
+import { dataFormatter, priceFormatter } from '../../ultis/formatter'
 
 export function Transactions() {
   const { transactions } = useContext(TransactionsContext)
@@ -31,7 +31,7 @@ export function Transactions() {
                   </PriceHighlight>
                 </td>
                 <td>{transaction.category}</td>
-                <td>{dataFormatter.format(new Date(transaction.createAt))}</td>
+                <td>{dataFormatter.format(new Date(transaction.createdAt))}</td>
               </tr>
             ))}
           </tbody>
